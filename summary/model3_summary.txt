@@ -1,0 +1,40 @@
+MODEL: model3
+Dependent variable: pfce_g
+Regressors: ['upi_share_g_lag1', 'cc_outstanding_g']
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 pfce_g   R-squared:                       0.071
+Model:                            OLS   Adj. R-squared:                  0.013
+Method:                 Least Squares   F-statistic:                     1.223
+Date:                Fri, 20 Mar 2026   Prob (F-statistic):              0.308
+Time:                        10:59:48   Log-Likelihood:                 44.027
+No. Observations:                  35   AIC:                            -82.05
+Df Residuals:                      32   BIC:                            -77.39
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const               -0.0080      0.027     -0.294      0.770      -0.063       0.047
+upi_share_g_lag1    -0.0166      0.020     -0.835      0.410      -0.057       0.024
+cc_outstanding_g     0.8959      0.611      1.467      0.152      -0.348       2.140
+==============================================================================
+Omnibus:                       44.785   Durbin-Watson:                   2.416
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              297.240
+Skew:                          -2.500   Prob(JB):                     2.85e-65
+Kurtosis:                      16.372   Cond. No.                         53.3
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Coefficients table (coef, p-value, 95% CI):
+                      coef   p_value    ci_low   ci_high
+const            -0.007975  0.770479 -0.063185  0.047235
+upi_share_g_lag1 -0.016604  0.410050 -0.057122  0.023913
+cc_outstanding_g  0.895944  0.152214 -0.348321  2.140209
+
+R-squared: 0.071011
+Adjusted R-squared: 0.012949
+Durbin-Watson: 2.415766

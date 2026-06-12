@@ -1,0 +1,44 @@
+MODEL: model1
+Dependent variable: pfce_g
+Regressors: ['upi_g_lag1', 'cc_outstanding_g', 'pos_count_g', 'ppi_value_cr_g']
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 pfce_g   R-squared:                       0.392
+Model:                            OLS   Adj. R-squared:                  0.311
+Method:                 Least Squares   F-statistic:                     4.842
+Date:                Fri, 20 Mar 2026   Prob (F-statistic):            0.00392
+Time:                        10:59:48   Log-Likelihood:                 51.455
+No. Observations:                  35   AIC:                            -92.91
+Df Residuals:                      30   BIC:                            -85.13
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const               -0.0121      0.023     -0.516      0.610      -0.060       0.036
+upi_g_lag1          -0.0464      0.028     -1.634      0.113      -0.104       0.012
+cc_outstanding_g     0.7109      0.522      1.361      0.184      -0.356       1.777
+pos_count_g          0.2038      0.264      0.772      0.446      -0.335       0.743
+ppi_value_cr_g       0.3163      0.080      3.947      0.000       0.153       0.480
+==============================================================================
+Omnibus:                       23.347   Durbin-Watson:                   2.346
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               59.656
+Skew:                          -1.381   Prob(JB):                     1.11e-13
+Kurtosis:                       8.769   Cond. No.                         56.0
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Coefficients table (coef, p-value, 95% CI):
+                      coef   p_value    ci_low   ci_high
+const            -0.012115  0.609618 -0.060061  0.035832
+upi_g_lag1       -0.046371  0.112684 -0.104323  0.011582
+cc_outstanding_g  0.710902  0.183544 -0.355588  1.777392
+pos_count_g       0.203845  0.446132 -0.335387  0.743077
+ppi_value_cr_g    0.316253  0.000441  0.152627  0.479880
+
+R-squared: 0.392336
+Adjusted R-squared: 0.311314
+Durbin-Watson: 2.345575
